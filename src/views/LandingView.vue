@@ -1,8 +1,11 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
 const handleGetStarted = () => {
-  console.log('Get started clicked')
-  // TODO: Navigate to auth page
-}
+  router.push({ name: 'login' });
+};
 </script>
 
 <template>
